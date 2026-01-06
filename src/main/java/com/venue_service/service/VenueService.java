@@ -24,10 +24,10 @@ public class VenueService {
     	}
     	Venue venue = Venue.builder()
     			.name(request.getName())
-    			..cityId(request.getCityId())
+    			.cityId(request.getCityId())
                 .address(request.getAddress())
                 .capacity(request.getCapacity())
-                .pricePerDay(request.getPricePerDay())
+                .pricePerday(request.getPricePerDay())
                 .available(true)
                 .build();
     	return venueRepository.save(venue);
